@@ -1,5 +1,8 @@
 package com.ecommerce.stepdefs;
 
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -52,14 +55,40 @@ public class Stepdefs {
 	@Then("Search Result page is displayed")
 	public void search_result_page_is_displayed() {
         WebDriverWait webDriverWait = new WebDriverWait(driver,20);
-        webDriverWait.until(ExpectedConditions.titleIs("Amazon.in : Laptop"));
+        webDriverWait.until(ExpectedConditions.titleIs("Amazon.in : Mobile"));
         
-        Assert.assertEquals("Page Title validation","Amazon.in : Laptop", driver.getTitle());
+        Assert.assertEquals("Page Title validation","Amazon.in : Mobile", driver.getTitle());
+    }
+	
+    @When("User click on any product")
+    public void user_click_on_any_product() {
+    	List <WebElement> productlist = driver.findElements(By.xpath("//a[@class='a-link-normal a-text-normal']"));
+    	productlist.get(0).click();
+    	
+    }
+    
+    @Then("Product Description is displayed in new tab")
+    public void product_description_is_displayed_in_new_tab() {
+    	Set <String> handles = driver.getWindowHandles();
+    	Iterator <String> it = handles.iterator();
+    	String original = it.next();
+    	String proddesc = it.next();
+    	
+    	driver.switchTo().window(proddesc);
+    	
+    	WebElement productTitle = driver.findElement(By.id("productTitle"));
+    	Assert.assertEquals("Product tiltle validation", true, productTitle.isDisplayed());
+    	
+    	WebElement addtocart = driver.findElement(By.id("add-to-cart-button"));
+    	Assert.assertEquals("add ti cart button validation", true,addtocart.isDisplayed() );
+    	
+    	driver.switchTo().window(original);
+    	
+    	
+    	
+    }
 
 
-
-		
-	}
 
 
 

@@ -3,20 +3,20 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2020-11-11T16:41:36.069Z",
-        "line": 6,
-        "name": "User is able to Open the browser, navigate to the URL and Search for Product",
+        "start_timestamp": "2020-11-13T08:45:39.208Z",
+        "line": 12,
+        "name": "User is click on the Product and check the Product Details",
         "description": "",
-        "id": "e-commerce-project-web-site-health-check;user-is-able-to-open-the-browser--navigate-to-the-url-and-search-for-product",
+        "id": "e-commerce-project-web-site-health-check;user-is-click-on-the-product-and-check-the-product-details",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 36556000000,
+              "duration": 30523000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 13,
             "name": "User opened browser",
             "match": {
               "location": "com.ecommerce.stepdefs.Stepdefs.user_opened_browser()"
@@ -25,10 +25,10 @@
           },
           {
             "result": {
-              "duration": 48100000000,
+              "duration": 64995000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 14,
             "name": "User navigated to the home application url",
             "match": {
               "location": "com.ecommerce.stepdefs.Stepdefs.user_navigated_to_the_home_application_url()"
@@ -37,31 +37,43 @@
           },
           {
             "result": {
-              "duration": 23220000000,
+              "duration": 16527000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "User Search for product \"Laptop\"",
+            "line": 15,
+            "name": "User Search for product \"Mobile\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Laptop\"",
+                  "val": "\"Mobile\"",
                   "offset": 24
                 }
               ],
               "location": "com.ecommerce.stepdefs.Stepdefs.user_search_for_product(java.lang.String)"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 369000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User click on any product",
+            "match": {
+              "location": "com.ecommerce.stepdefs.Stepdefs.user_click_on_any_product()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 9000000,
+              "duration": 12108000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "Search Result page is displayed",
+            "line": 17,
+            "name": "Product Description is displayed in new tab",
             "match": {
-              "location": "com.ecommerce.stepdefs.Stepdefs.search_result_page_is_displayed()"
+              "location": "com.ecommerce.stepdefs.Stepdefs.product_description_is_displayed_in_new_tab()"
             },
             "keyword": "Then "
           }
@@ -74,7 +86,7 @@
             "name": "@healthcheck"
           },
           {
-            "name": "@tag1"
+            "name": "@t"
           }
         ]
       }
