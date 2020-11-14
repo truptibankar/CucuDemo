@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "classpath:Feature",
 		glue = "com.ecommerce.stepdefs",
-		tags = "@t",
+		tags = "",
 		plugin = {"pretty", 
 				"html:target/Htmlreport/testreport.html",
 	            "json:target/json/file.json",

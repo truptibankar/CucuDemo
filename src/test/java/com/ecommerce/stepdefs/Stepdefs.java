@@ -12,6 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -27,7 +29,22 @@ public class Stepdefs {
 	int implicit_wait_timeinsec = 20;
 	
 	
+    @Before
+    public void setUp(){
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(implicit_wait_timeinsec, TimeUnit.SECONDS);
+    }
+    
+    @After
+    public void CleanUp()
+    {
+    	driver.quit();
+    }
+
+	
 	@Given("User opened browser")
+    @Deprecated
 	public void user_opened_browser() {
 		driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(implicit_wait_timeinsec, TimeUnit.SECONDS);	
@@ -82,12 +99,17 @@ public class Stepdefs {
     	WebElement addtocart = driver.findElement(By.id("add-to-cart-button"));
     	Assert.assertEquals("add ti cart button validation", true,addtocart.isDisplayed() );
     	
+    	WebElement buyButton = driver.findElement(By.id("buy-now-button"));
+    	Assert.assertEquals("Buy button presence validation", true, buyButton.isDisplayed());
+
+    	
     	driver.switchTo().window(original);
     	
-    	
-    	
     }
+    
+    
 
+    
 
 
 

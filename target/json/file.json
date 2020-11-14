@@ -3,17 +3,134 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2020-11-13T08:45:39.208Z",
-        "line": 12,
-        "name": "User is click on the Product and check the Product Details",
+        "start_timestamp": "2020-11-13T16:29:01.787Z",
+        "before": [
+          {
+            "result": {
+              "duration": 23522000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ecommerce.stepdefs.Stepdefs.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User is able to Open the browser, navigate to the URL and Search for Product",
         "description": "",
-        "id": "e-commerce-project-web-site-health-check;user-is-click-on-the-product-and-check-the-product-details",
+        "id": "e-commerce-project-web-site-health-check;user-is-able-to-open-the-browser--navigate-to-the-url-and-search-for-product",
+        "after": [
+          {
+            "result": {
+              "duration": 2877000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ecommerce.stepdefs.Stepdefs.CleanUp()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 30523000000,
+              "duration": 13834000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User opened browser",
+            "match": {
+              "location": "com.ecommerce.stepdefs.Stepdefs.user_opened_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 94933000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigated to the home application url",
+            "match": {
+              "location": "com.ecommerce.stepdefs.Stepdefs.user_navigated_to_the_home_application_url()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37320000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Search for product \"Mobile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mobile\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.ecommerce.stepdefs.Stepdefs.user_search_for_product(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Search Result page is displayed",
+            "match": {
+              "location": "com.ecommerce.stepdefs.Stepdefs.search_result_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@healthcheck"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-13T16:31:56.065Z",
+        "before": [
+          {
+            "result": {
+              "duration": 17719000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ecommerce.stepdefs.Stepdefs.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "User is click on the Product and check the Product Details",
+        "description": "",
+        "id": "e-commerce-project-web-site-health-check;user-is-click-on-the-product-and-check-the-product-details",
+        "after": [
+          {
+            "result": {
+              "duration": 1978000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ecommerce.stepdefs.Stepdefs.CleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7937000000,
               "status": "passed"
             },
             "line": 13,
@@ -25,8 +142,9 @@
           },
           {
             "result": {
-              "duration": 64995000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d86.0.4240.198)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-NCVL8SDA\u0027, ip: \u0027169.254.113.220\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\HP\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:62669}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 5a8b06761297cff05ea8d31322186971\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)\r\n\tat com.ecommerce.stepdefs.Stepdefs.user_navigated_to_the_home_application_url(Stepdefs.java:57)\r\n\tat ✽.User navigated to the home application url(classpath:Feature/HealtCheck3.feature:14)\r\n",
+              "duration": 46118000000,
+              "status": "failed"
             },
             "line": 14,
             "name": "User navigated to the home application url",
@@ -37,8 +155,7 @@
           },
           {
             "result": {
-              "duration": 16527000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "User Search for product \"Mobile\"",
@@ -55,8 +172,7 @@
           },
           {
             "result": {
-              "duration": 369000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "User click on any product",
@@ -67,8 +183,7 @@
           },
           {
             "result": {
-              "duration": 12108000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "Product Description is displayed in new tab",
