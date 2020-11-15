@@ -3,15 +3,15 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2020-11-13T16:29:01.787Z",
+        "start_timestamp": "2020-11-15T05:11:06.221Z",
         "before": [
           {
             "result": {
-              "duration": 23522000000,
+              "duration": 27947000000,
               "status": "passed"
             },
             "match": {
-              "location": "com.ecommerce.stepdefs.Stepdefs.setUp()"
+              "location": "com.ecommerce.stepdefs.Stepdefs.setUp(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -21,8 +21,11 @@
         "id": "e-commerce-project-web-site-health-check;user-is-able-to-open-the-browser--navigate-to-the-url-and-search-for-product",
         "after": [
           {
+            "output": [
+              "Browser Closed"
+            ],
             "result": {
-              "duration": 2877000000,
+              "duration": 4339000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +38,7 @@
         "steps": [
           {
             "result": {
-              "duration": 13834000000,
+              "duration": 14471000000,
               "status": "passed"
             },
             "line": 6,
@@ -46,8 +49,12 @@
             "keyword": "Given "
           },
           {
+            "output": [
+              "navigated to url: https://www.amazon.in/",
+              "page title validation is successful:Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
+            ],
             "result": {
-              "duration": 94933000000,
+              "duration": 32726000000,
               "status": "passed"
             },
             "line": 7,
@@ -58,8 +65,12 @@
             "keyword": "And "
           },
           {
+            "output": [
+              "Product Searched: Mobile",
+              "Clicked on log button"
+            ],
             "result": {
-              "duration": 37320000000,
+              "duration": 16904000000,
               "status": "passed"
             },
             "line": 8,
@@ -76,8 +87,11 @@
             "keyword": "When "
           },
           {
+            "output": [
+              "product page title validation is successfull:Amazon.in : Mobile"
+            ],
             "result": {
-              "duration": 13000000,
+              "duration": 41000000,
               "status": "passed"
             },
             "line": 9,
@@ -98,15 +112,15 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-13T16:31:56.065Z",
+        "start_timestamp": "2020-11-15T05:12:42.990Z",
         "before": [
           {
             "result": {
-              "duration": 17719000000,
+              "duration": 14474000000,
               "status": "passed"
             },
             "match": {
-              "location": "com.ecommerce.stepdefs.Stepdefs.setUp()"
+              "location": "com.ecommerce.stepdefs.Stepdefs.setUp(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -116,8 +130,11 @@
         "id": "e-commerce-project-web-site-health-check;user-is-click-on-the-product-and-check-the-product-details",
         "after": [
           {
+            "output": [
+              "Browser Closed"
+            ],
             "result": {
-              "duration": 1978000000,
+              "duration": 3226000000,
               "status": "passed"
             },
             "match": {
@@ -130,7 +147,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7937000000,
+              "duration": 13720000000,
               "status": "passed"
             },
             "line": 13,
@@ -141,10 +158,13 @@
             "keyword": "Given "
           },
           {
+            "output": [
+              "navigated to url: https://www.amazon.in/",
+              "page title validation is successful:Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
+            ],
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d86.0.4240.198)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-NCVL8SDA\u0027, ip: \u0027169.254.113.220\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\HP\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:62669}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 5a8b06761297cff05ea8d31322186971\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)\r\n\tat com.ecommerce.stepdefs.Stepdefs.user_navigated_to_the_home_application_url(Stepdefs.java:57)\r\n\tat ✽.User navigated to the home application url(classpath:Feature/HealtCheck3.feature:14)\r\n",
-              "duration": 46118000000,
-              "status": "failed"
+              "duration": 23816000000,
+              "status": "passed"
             },
             "line": 14,
             "name": "User navigated to the home application url",
@@ -154,8 +174,13 @@
             "keyword": "And "
           },
           {
+            "output": [
+              "Product Searched: Mobile",
+              "Clicked on log button"
+            ],
             "result": {
-              "status": "skipped"
+              "duration": 18402000000,
+              "status": "passed"
             },
             "line": 15,
             "name": "User Search for product \"Mobile\"",
@@ -171,8 +196,13 @@
             "keyword": "And "
           },
           {
+            "output": [
+              "list of product searched:22",
+              "click on the link. Link text: OnePlus 7T Glacier Blue (8GB RAM+256GB Storage)"
+            ],
             "result": {
-              "status": "skipped"
+              "duration": 845000000,
+              "status": "passed"
             },
             "line": 16,
             "name": "User click on any product",
@@ -182,8 +212,18 @@
             "keyword": "When "
           },
           {
+            "output": [
+              "list of windows found :2",
+              "Windows handles: [CDwindow-03B0D7739CAED3113A2C13CE35942059, CDwindow-65C208114EB78769D8200724D9D7AC49]",
+              "swithched to the new window",
+              "product title validation is successful: OnePlus 7T Glacier Blue (8GB RAM+256GB Storage)",
+              "add to cart button is displayed",
+              "buy button is displayed",
+              "switched back to the original window"
+            ],
             "result": {
-              "status": "skipped"
+              "duration": 12690000000,
+              "status": "passed"
             },
             "line": 17,
             "name": "Product Description is displayed in new tab",
